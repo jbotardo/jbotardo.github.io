@@ -829,7 +829,7 @@ ol li {
 }
 
 ul {
-	list-style: disc;
+	
 	margin: 0 0 2rem 0;
 	padding-left: 1em;
 }
@@ -1754,8 +1754,29 @@ body.is-preload #footer {
 	opacity: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 200px) {
 	.column {
-		width: 100%;
+		float: left;
+		width: 25%
 	}
 }
+
+.column {
+	float: left;
+	width: 50%
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  .row {
+	margin: 8px -16px;
+  }
